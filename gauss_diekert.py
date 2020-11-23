@@ -1,5 +1,5 @@
-# Dla zadanego N, generuje graf Diekerta w formacie dot dla współbieżnego algorytmu Gaussa.
-# Graf zapisywany jest do pliku gauss_diekert.dot.
+# For given N, generates Diekert's graph in dot format for concurrent Gauss algorithm.
+# The graph is saved to gauss_diekert.dot.
 
 N = 4
 
