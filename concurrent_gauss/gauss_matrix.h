@@ -4,8 +4,6 @@
 
 #pragma once
 
-double eps = 0.00001;   // numerical zero
-
 class GaussMatrix
 {
 private:
@@ -13,6 +11,7 @@ private:
     std::vector<std::vector<double>> values;
     std::vector<double> m;                  // for keeping the values returned by A actions
     std::vector< std::vector<double> > n;   // for keeping the values returned by B actions
+    static constexpr double eps = 0.00001;  // numerical zero
 
     static std::vector<double> numbersFromLine(std::string &line, int N);
 
@@ -45,5 +44,3 @@ public:
     double& operator()(int row, int col);   // Access the individual elements 
     friend std::ostream& operator<<(std::ostream& out, const GaussMatrix& M);   // Print the matrix
 };
-
-#include "gauss_matrix.cpp"
